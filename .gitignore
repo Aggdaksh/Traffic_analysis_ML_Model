@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments and secrets
+.env
+.env.*
+venv/
+.venv/
+
+# Local editor/system files
+.DS_Store
+.vscode/
+.idea/
+
+# Notebook runtime state
+.ipynb_checkpoints/
+
+# Competition data is kept local; download it from the platform.
+data/raw/
+
+# Generated training artifacts and old experiment outputs
+catboost_info/
+submission_previous_stacking.csv
