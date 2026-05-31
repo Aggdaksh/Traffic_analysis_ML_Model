@@ -2,7 +2,7 @@
 
 Submission-ready solution for the traffic demand prediction task.
 
-Best accepted submission score: `90.73`.
+Best accepted submission score: `90.85`.
 
 ## Approach
 
@@ -19,7 +19,7 @@ nowcast model:
   around the strongest accepted baseline
 - validation uses forward time splits inside day 49 to avoid random CV leakage
 
-The exact final prediction file is preserved as `submission_final_90_73.csv`.
+The exact final prediction file is preserved as `submission_final_90_85.csv`.
 
 ## Run
 
@@ -44,6 +44,6 @@ MPLCONFIGDIR=/private/tmp/mpl /opt/anaconda3/bin/python main.py
 This writes:
 
 - `submission.csv` - upload this in the prediction file section
-- `submission_final_90_73.csv` - archived copy of the best accepted prediction
+- `submission_final_90_85.csv` - archived copy of the best accepted prediction
 - `notebooks/traffic_demand_prediction_submission.ipynb` - upload this as source
   code

@@ -29,7 +29,7 @@ submission_89_*.csv
 submission_next_*.csv
 submission_best_*.csv
 submission_final_*.csv
-!submission_final_90_73.csv
+!submission_final_90_85.csv
 candidate_submissions/
 candidate_submissions_publicfit/
 candidate_submissions_publicfit2/

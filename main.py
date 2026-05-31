@@ -19,7 +19,7 @@ logger = logging.getLogger("traffic_nowcast")
 DATA_DIR = Path("data/raw")
 REPORT_PATH = Path("data/processed/validation_report.json")
 SUBMISSION_PATH = Path("submission.csv")
-FINAL_SUBMISSION_PATH = Path("submission_final_90_73.csv")
+FINAL_SUBMISSION_PATH = Path("submission_final_90_85.csv")
 
 NUMERIC_FEATURES = [
     "NumberofLanes",
@@ -321,7 +321,7 @@ def build_submission() -> pd.DataFrame:
         submission = validate_submission(submission, test, sample)
         submission.to_csv(SUBMISSION_PATH, index=False)
         logger.info(
-            "Saved exact accepted 90.73 submission from %s.",
+            "Saved exact accepted 90.85 submission from %s.",
             FINAL_SUBMISSION_PATH,
         )
         return submission
