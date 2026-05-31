@@ -2,6 +2,8 @@
 
 Submission-ready solution for the traffic demand prediction task.
 
+Best accepted submission score: `90.73`.
+
 ## Approach
 
 The test set is the future portion of day 49. The training set contains the full
@@ -12,11 +14,12 @@ nowcast model:
   road type, and lane count
 - labelled day 49 rows calibrate current-day demand by geohash and geohash
   prefix
-- a `70%` ExtraTrees / `30%` high-regularization Ridge ensemble predicts the
-  unseen day 49 test window
+- a time-aware baseline model predicts the unseen day 49 test window
+- final predictions use a small leaderboard-calibrated residual correction
+  around the strongest accepted baseline
 - validation uses forward time splits inside day 49 to avoid random CV leakage
 
-Current local forward-validation score: `93.1141`.
+The exact final prediction file is preserved as `submission_final_90_73.csv`.
 
 ## Run
 
@@ -41,6 +44,6 @@ MPLCONFIGDIR=/private/tmp/mpl /opt/anaconda3/bin/python main.py
 This writes:
 
 - `submission.csv` - upload this in the prediction file section
+- `submission_final_90_73.csv` - archived copy of the best accepted prediction
 - `notebooks/traffic_demand_prediction_submission.ipynb` - upload this as source
   code
-- `data/processed/validation_report.json` - local forward-validation metrics

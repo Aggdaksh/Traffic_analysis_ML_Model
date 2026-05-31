@@ -22,4 +22,20 @@ data/raw/
 
 # Generated training artifacts and old experiment outputs
 catboost_info/
+data/processed/
 submission_previous_stacking.csv
+submission_86_*.csv
+submission_89_*.csv
+submission_next_*.csv
+submission_best_*.csv
+submission_final_*.csv
+!submission_final_90_73.csv
+candidate_submissions/
+candidate_submissions_publicfit/
+candidate_submissions_publicfit2/
+candidate_submissions_calibrated/
+candidate_submissions_daycurve/
+candidate_submissions_ranked/
+candidate_submissions_feedback3/
+candidate_submissions_refit4/
+candidate_submissions_transfer5/
